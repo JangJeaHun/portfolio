@@ -50,6 +50,8 @@ header {
     }
     .profile{
         margin: 1.5rem 0;
+        width: 80%;
+        margin: 2rem auto;
     }
     .profile img{
         max-width: 100%;
