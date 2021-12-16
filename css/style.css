@@ -1,0 +1,54 @@
+h1 {
+    display: none;
+}
+.wrap{
+    width: 1000px; margin:0 auto;    
+}
+header {
+    display: flex;  /* flex는 좌우배치 */
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.logo{
+    font-size: 1.750rem;
+}
+.menu{
+    font-size: 1.250rem;
+}
+.menu a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 0 0 px;
+}
+
+@media screen and (max-width: 360px){
+    .wrap{
+        width: 100%;
+    }
+    header {
+        flex-direction: column;  /* 플렉스-방향:컬럼*/
+        height: auto;
+    }
+    .logo{
+        font-size: 2rem;   /*글자크기*/
+        padding: 1rem 0;  /*상하에는 기본값 1배 크기 안쪽 여백*/
+        text-transform: uppercase; /* 영어 대문자로 바꾸기 */
+    }
+    .menu{
+        background-color: pink;
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 1.250rem;
+        display: flex;
+        justify-content: center;
+    }
+    .menu a{
+        color: white;
+        text-transform: uppercase;
+        margin: 0 1rem;
+    }
+    .profile img{
+        max-width: 100%;
+    }
+}
