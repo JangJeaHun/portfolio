@@ -48,7 +48,57 @@ header {
         text-transform: uppercase;
         margin: 0 1rem;
     }
+    .profile{
+        margin: 1.5rem 0;
+    }
     .profile img{
         max-width: 100%;
+    }
+    .contents p{
+        font-size: 1.625rem;
+        margin: 0 0 0 20%;
+    }   
+
+    .keywords1{
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem 0;
+        column-gap: 2rem;
+       
+    }
+    .keywords2{
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem 0;
+        column-gap: 2rem;
+    }
+    .keywords span {
+        padding: 10px 15px;
+        color: black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgb(63, 63, 63);
+        text-shadow: 0 0 3px black;
+
+
+    }
+
+
+    .uxui {
+        background-color: #D37AFD;
+    }
+    .web {
+        background-color: #7D9AFF;
+    }
+    .app {
+        background-color: #72F3BD;
+    }
+    .front-end {
+        background-color: #CDFF8C;
+    }
+    .full-stack {
+        background-color: #F25D5D;
+    }
+    .back-end {
+        background-color: #CDFF8C;
     }
 }
