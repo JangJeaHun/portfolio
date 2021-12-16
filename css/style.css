@@ -64,7 +64,6 @@ header {
         justify-content: center;
         margin: 1.5rem 0;
         column-gap: 2rem;
-       
     }
     .keywords2{
         display: flex;
@@ -101,4 +100,9 @@ header {
     .back-end {
         background-color: #CDFF8C;
     }
+    .buttons{
+        text-align: center;
+        margin: 0 0 auto;
+    }
+        
 }
