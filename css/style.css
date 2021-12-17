@@ -31,22 +31,28 @@ header {
         height: auto;
     }
     .logo{
-        font-size: 2rem;   /*글자크기*/
+        font-size: 3rem;   /*글자크기*/
         padding: 1rem 0;  /*상하에는 기본값 1배 크기 안쪽 여백*/
         text-transform: uppercase; /* 영어 대문자로 바꾸기 */
+        font-weight: 800;
+    }
+    .logo a{
+        color:  black;
+        text-decoration: none;
     }
     .menu{
         background-color: pink;
         width: 100%;
         padding: 1rem 0;
-        font-size: 1.250rem;
+        font-size: 1.50rem;
         display: flex;
         justify-content: center;
     }
     .menu a{
         color: white;
         text-transform: uppercase;
-        margin: 0 1rem;
+        margin: 0 2rem;
+        font-weight: 600;
     }
     .profile{
         margin: 1.5rem 0;
@@ -112,16 +118,26 @@ header {
         background: #191919;
         padding-right: 5%;
         color: white;
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
 
     .location a {
         color:  white;
         text-decoration: none;    /*밑줄 없앰  */
-
+        
     }
     .contents ul {
         list-style: disc;
         list-style-position: inside;
+        font-size: 1rem;
+    }
+    
+    .contents h2
+    {
+        font-size: 2rem;
+        padding: 1rem 0;
+
     }
 
     .inner{
