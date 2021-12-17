@@ -106,5 +106,28 @@ header {
         text-align: center;
         margin: 0 0 auto;
     }
-        
+    .location {
+        display: flex;
+        justify-content: flex-end;
+        background: #191919;
+        padding-right: 5%;
+        color: white;
+    }
+
+    .location a {
+        color:  white;
+        text-decoration: none;    /*밑줄 없앰  */
+
+    }
+    .contents ul {
+        list-style: disc;
+        list-style-position: inside;
+    }
+
+    .inner{
+        margin: 2% 5%;
+    }
+    .inner iframe {
+        max-width: 100%;
+    }
 }
