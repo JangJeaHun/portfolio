@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 @font-face {
-	font-family: "longline";
+	font-family: "longline","Noto Sans","맑은 고딕",sans-serif;
 	src: url("https://assets.codepen.io/756881/Longline+Quart+FREE.ttf")
 		format("truetype");
 	font-weight: normal;
 	font-style: normal;
+}
+a:visited,a:link{
+	text-decoration: none;
+	color: inherit;
 }
 /* Work폴더 유트브동영상 관련 */
 * { box-sizing: border-box; }
@@ -65,10 +69,10 @@ body {
 	-ms-overflow-style: none;
 }
 
+/* 스크롤바 없애기 기능살리기위해-ms-overflow-style: none; 도 같이 써야함 */
 ::-webkit-scrollbar {
 	display: none;
 }
-
 
 
 h1 {
@@ -184,3 +188,106 @@ img {
 	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
 	background-size: contain;
 }
+/* animate 영역 끝 */
+/* index 부분 */
+
+header{
+	z-index: 998;
+	position: fixed;
+	height: 186px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 10px;
+}
+header img{
+	width: 80px;
+}
+#gnb{
+	display: flex;
+}
+#gnb a{
+	display: block;
+	width: 181px;
+	height: 30px;
+	font-size: 20px;
+	font-family: "Noto Sans";
+}
+#gnb li:hover>a{
+	color: #333;
+}
+
+figure{
+	position:relative;
+	width:181px;
+	height:30px;
+	left:50%;
+	margin-left:-150px;
+	/* background:#333; */
+  }
+  
+  figure:hover figcaption{ opacity: 1; }
+  figure:hover .line::before { width: 80%; }
+  figure:hover .line::after { width: 80%; }
+  figure:hover .line span::before { height: 80%; }
+  figure:hover .line span::after { height: 80.5%; }
+  
+  
+  figcaption{
+	position:relative;
+	width:181px;
+	height:30px;
+	background:rgba(0,0,0,0.7);
+	opacity:0;
+	transition: all 0.5s;
+  }
+  
+  a figcaption p{
+	color:#fff; font-weight:bold; font-size:20px; 
+	text-align:center; line-height:30;
+  }
+  
+  .line::before {
+	  content: "";
+	  position: absolute;
+	  background: rgba(255, 255, 255, 0.7);
+	  display: inline-block;
+	  transition: all 0.5s;
+	  left: 10%;
+	  top: 10%;
+	  width: 0%;
+	  height: 2px; 
+  }
+  
+  .line::after {
+	content: "";
+	position: absolute;
+	background: rgba(230, 230, 230, 0.7);
+	display: inline-block;
+	transition: all 0.5s;
+	left: 10%;
+	top: 90%;
+	width: 0%;
+	height: 2px; }
+  
+  .line span::before {
+	content: "";
+	position: absolute;
+	background: rgba(230, 230, 230, 0.7);
+	display: inline-block;
+	transition: all 0.5s;
+	left: 10%;
+	top: 10%;
+	width: 2px;
+	height: 0%; }
+  
+  .line span::after {
+	content: "";
+	position: absolute;
+	background: rgba(230, 230, 230, 0.7);
+	display: inline-block;
+	transition: all 0.5s;
+	left: 90%;
+	top: 10%;
+	width: 2px;
+	height: 0%; }
