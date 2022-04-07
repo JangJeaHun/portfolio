@@ -1,0 +1,27 @@
+/* work 부문 */
+header{
+	z-index: 998;
+	position: fixed;
+	height: 186px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 10px;
+}
+header img{
+	width: 80px;
+}
+#gnb{
+	display: flex;
+}
+#gnb a{
+	display: block;
+	width: 181px;
+	height: 30px;
+	font-size: 16px;
+	font-family: "Noto Sans";
+}
+#gnb li:hover>a{
+	color: #333;
+	font-weight: bold;
+}
