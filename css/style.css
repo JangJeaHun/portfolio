@@ -59,8 +59,8 @@ body {
 	font-family: "Noto Sans", sans-serif;
 	background-color: #ECB682;
 	color: white;
-	/* overflow-y: hidden */
-	-ms-overflow-style: none;
+	overflow-x: hidden; 
+	-ms-overflow-style: none; 
 }
 
 /* 스크롤바 없애기 기능살리기위해-ms-overflow-style: none; 도 같이 써야함 */
@@ -186,7 +186,32 @@ h1 {
 
 
 /* index 부분 */
-
+header{
+	z-index: 998;
+	position: fixed;
+	height: 186px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 10px;
+}
+header img{
+	width: 80px;
+}
+#gnb{
+	display: flex;
+}
+#gnb a{
+	display: block;
+	width: 181px;
+	height: 30px;
+	font-size: 16px;
+	font-family: "Noto Sans";
+}
+#gnb li:hover>a{
+	color: #333;
+	font-weight: bold;
+}
 
 
 
@@ -207,77 +232,78 @@ h1 {
 
 
 /* 선 테두리 애니메이션 */
+a{ text-decoration:none; }
+
 figure{
-	position:relative;
-	width:181px;
-	height:30px;
-	left:50%;
-	margin-left:-150px;
-	/* background:#333; */
-  }
-  
-  figure:hover figcaption{ opacity: 1; }
-  figure:hover .line::before { width: 80%; }
-  figure:hover .line::after { width: 80%; }
-  figure:hover .line span::before { height: 80%; }
-  figure:hover .line span::after { height: 80.5%; }
-  
-  
-  figcaption{
-	position:relative;
-	width:181px;
-	height:30px;
-	background:rgba(0,0,0,0.7);
-	opacity:0;
-	transition: all 0.5s;
-  }
-  
-  a figcaption p{
-	color:#fff; font-weight:bold; font-size:20px; 
-	text-align:center; line-height:30;
-  }
-  
-  .line::before {
-	  content: "";
-	  position: absolute;
-	  background: rgba(255, 255, 255, 0.7);
-	  display: inline-block;
-	  transition: all 0.5s;
-	  left: 10%;
-	  top: 10%;
-	  width: 0%;
-	  height: 2px; 
-  }
-  
-  .line::after {
-	content: "";
-	position: absolute;
-	background: rgba(230, 230, 230, 0.7);
-	display: inline-block;
-	transition: all 0.5s;
-	left: 10%;
-	top: 90%;
-	width: 0%;
-	height: 2px; }
-  
-  .line span::before {
-	content: "";
-	position: absolute;
-	background: rgba(230, 230, 230, 0.7);
-	display: inline-block;
-	transition: all 0.5s;
-	left: 10%;
-	top: 10%;
-	width: 2px;
-	height: 0%; }
-  
-  .line span::after {
-	content: "";
-	position: absolute;
-	background: rgba(230, 230, 230, 0.7);
-	display: inline-block;
-	transition: all 0.5s;
-	left: 90%;
-	top: 10%;
-	width: 2px;
-	height: 0%; }
+  position:relative;
+  width:300px; height:300px;
+  left:50%;
+  margin-left:-150px;
+  /* background:skyblue; */
+}
+
+figure:hover figcaption{ opacity: 1; }
+figure:hover figcaption .line::before { width: 80%; }
+figure:hover figcaption .line::after { width: 80%; }
+figure:hover figcaption .line span::before { height: 80%; }
+figure:hover figcaption .line span::after { height: 80.5%; }
+
+
+figcaption{
+  position:absolute;
+  width:300px; height:300px;
+  background:rgba(0,0,0,0.7);
+  opacity:0;
+  transition: all 0.5s;
+  top: 0;
+}
+
+.long a figcaption p{
+  color:#fff; font-weight:bold; font-size:40px; 
+  text-align:center; line-height:300px;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    transition: all 0.5s;
+    left: 10%;
+    top: 10%;
+    width: 0%;
+    height: 2px; 
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  background: rgba(230, 230, 230, 0.7);
+  display: inline-block;
+  transition: all 0.5s;
+  left: 10%;
+  top: 90%;
+  width: 0%;
+  height: 2px; }
+
+.line span::before {
+  content: "";
+  position: absolute;
+  background: rgba(230, 230, 230, 0.7);
+  display: inline-block;
+  transition: all 0.5s;
+  left: 10%;
+  top: 10%;
+  width: 2px;
+  height: 0%; }
+
+.line span::after {
+  content: "";
+  position: absolute;
+  background: rgba(230, 230, 230, 0.7);
+  display: inline-block;
+  transition: all 0.5s;
+  left: 90%;
+  top: 10%;
+  width: 2px;
+  height: 0%; }
