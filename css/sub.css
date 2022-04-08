@@ -12,13 +12,15 @@
 
 /* 메인 클리핑마스크 글자안에 동영상 */
 .wrapper{
-background: #B6D494;
-height: 100vh;
+/* background: #B6D494; */
+background: url(../images/bg.jpg) no-repeat;
+background-size: cover;
+height: 200vh;
 position: relative;  
 }
 .text{
 flex: 0 0 100%;
-font-size: 20rem;
+font-size: 45vw;
 font-weight: 900;
 color: #00000000;
 text-align: center;
@@ -29,13 +31,13 @@ transform: translate(-50%, -35%);
 /* border-bottom: 1px solid #d4d7ff;
 border-top: 1px solid #d4d7ff; */
 background: url(https://media.giphy.com/media/3o6ZtluYTKJeXXqt8s/giphy.gif) no-repeat;
-background-size: cover;
+background-size: over;
 background-clip: text;
 -webkit-background-clip: text;
 }
 .text:after{
 	content: attr(data-text);
-	-webkit-text-stroke: 1.5px #d4d7ff;
+	/* -webkit-text-stroke: 1.5px #d4d7ff; */
 	position: absolute;
 	left: 50%;
 	top: 35%;
@@ -44,27 +46,33 @@ background-clip: text;
 	background-size: cover;
 	background-clip: text;
 	-webkit-background-clip: text;
-	background-size: 43%;
 }
 
 
-
-
-
+/* main영역 */
+#sub_main{
+	height: 200vh;
+}
 article>section{
 	height: 100vh;
 	width: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
+#slide{
+	padding-top: 25vh;
+}
+
+
+
 
 article>section:first-child{
 	background-color: green;
 }
 article>section:nth-child(2){
-	background-color: yellow;
+	background-color: yellowgreen;
 }
 article>section:nth-child(3){
-	background-color: blue;
+	background-color: skyblue;
 }
 article>section:nth-child(4){
 	background-color: green;

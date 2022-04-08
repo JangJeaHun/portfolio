@@ -304,8 +304,9 @@ header img{
 	font-family: "Noto Sans";
 }
 #gnb li:hover>a{
-	color: #333;
+	color: plum;
 	font-weight: bold;
+	text-decoration: underline;
 }
 .fa-bars{
 	display: none;
