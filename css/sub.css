@@ -2,7 +2,7 @@
 
 ::-webkit-scrollbar {
 	display: block;
-	width: 15px; 
+	width: 10px; 
 	height: 20px;  
 }
 ::-webkit-scrollbar-thumb {
@@ -13,10 +13,12 @@
 
 article>section{
 	height: 100vh;
+	width: 100%;
+	overflow: hidden;
 }
 
 article>section:first-child{
-	background-color: red;
+	background-color: green;
 }
 article>section:nth-child(2){
 	background-color: yellow;

@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
 	//alert('123');
 	$('.slick-items').slick({
 		autoplay : true,
@@ -11,12 +10,22 @@ $(document).ready(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		fade: false
-
 	});
+	
+	
+})
 
-});
+	$(".fa-bars").click(function(){
+		$("#side").show();
+	})
+	
+	$(".close").click(function(){
+		$("#side").hide();
+	})
 
-console.clear();
+
+
+
 
 gsap.registerPlugin("ScrollTrigger");
 

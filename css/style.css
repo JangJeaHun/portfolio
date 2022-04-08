@@ -180,38 +180,10 @@ h1 {
 /* animate 영역 끝 */
 /* fullpage 영역 */
 .section2{
-	background-color: red;
+	background-color: green;
 }
 
 
-
-/* index 부분 */
-header{
-	z-index: 998;
-	position: fixed;
-	height: 186px;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	margin: 10px 10px;
-}
-header img{
-	width: 80px;
-}
-#gnb{
-	display: flex;
-}
-#gnb a{
-	display: block;
-	width: 181px;
-	height: 30px;
-	font-size: 16px;
-	font-family: "Noto Sans";
-}
-#gnb li:hover>a{
-	color: #333;
-	font-weight: bold;
-}
 
 
 
@@ -307,3 +279,116 @@ figcaption{
   top: 10%;
   width: 2px;
   height: 0%; }
+
+/* index 부분 */
+header{
+	z-index: 998;
+	position: fixed;
+	height: 186px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 10px;
+}
+header img{
+	width: 80px;
+}
+#gnb{
+	display: flex;
+}
+#gnb a{
+	display: block;
+	width: 15vw;
+	height: 30px;
+	font-size: 18px;
+	font-family: "Noto Sans";
+}
+#gnb li:hover>a{
+	color: #333;
+	font-weight: bold;
+}
+.fa-bars{
+	display: none;
+}
+#side{
+	display: none;
+}
+
+
+@media all and ( max-width: 376px ){
+
+
+
+	/* header img{
+		width: 80px;
+	}
+	#gnb{
+		display: flex;
+	}
+	#gnb a{
+		display: block;
+		width: 181px;
+		height: 30px;
+		font-size: 16px;
+		font-family: "Noto Sans";
+	}
+	#gnb li:hover>a{
+		color: #333;
+		font-weight: bold;
+	} */
+	
+}
+
+@media all and ( max-width: 769px ){
+
+
+	header>nav{
+		display: none;
+	}
+	/* 사이드메뉴 */
+	.fa-bars{
+		cursor: pointer;
+		z-index: 1000;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 40px;
+		display: block;
+		width: 100px;
+		height: 100px;
+	}
+	#side{
+		/* display: none; */
+		background-color: rgba(0, 0, 0, 0.7);
+		width: 40vw;
+		height: 100vh;
+		right: 0;
+		position: fixed;
+		z-index: 999;
+		transition-duration: 0.4s;
+	}
+	.close{
+		position: absolute;
+		color: white;
+		font-size: 40px;
+		left: 20px;
+		top: 20px;
+		cursor: pointer;
+	}
+	#sideMenu{
+		padding: 30vw 15px;
+	}
+	#sideMenu>li>a{
+		display: block;
+		height: 60px;
+		width: 100%;
+		font-size: 20px;
+	}
+	#sideMenu li:hover>a{
+		color: #eee;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+
+}
