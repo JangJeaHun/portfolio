@@ -15,7 +15,7 @@
 /* background: #B6D494; */
 background: url(../images/bg.jpg) no-repeat;
 background-size: cover;
-height: 200vh;
+height: 100vh;
 position: relative;  
 }
 .text{
@@ -51,7 +51,7 @@ background-clip: text;
 
 /* main영역 */
 #sub_main{
-	height: 200vh;
+	height: 100vh;
 }
 article>section{
 	height: 100vh;
@@ -61,8 +61,6 @@ article>section{
 #slide{
 	padding-top: 25vh;
 }
-
-
 
 
 article>section:first-child{
