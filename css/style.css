@@ -124,7 +124,7 @@ h1 {
 	left: 0;
 	width: 6%;
 	max-width: 200px;
-	aspect-ratio: 1 / 1;
+	/* aspect-ratio: 1 / 1; */
 	cursor: pointer;
 }
 
