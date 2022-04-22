@@ -306,7 +306,6 @@ header img{
 #gnb li:hover>a{
 	color: plum;
 	font-weight: bold;
-	text-decoration: underline;
 }
 .fa-bars{
 	display: none;
