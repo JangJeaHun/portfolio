@@ -1,6 +1,9 @@
 /* work 부문 */
 *{
 	font-family: "Noto Sans",sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 ::-webkit-scrollbar {
 	display: block;
@@ -26,7 +29,17 @@
 	}
   }
 
+/* //통통 튀는 애니메이션 */
 
+
+.canvas {
+	display: grid;
+	place-items: center;
+	background: hsl(0, 0%, 96%);
+	width: 75vmin;
+	height: 75vmin;
+	background: hsl(0, 0%, 100%);
+}
 
 
 /* 메인 클리핑마스크 글자안에 동영상 */
