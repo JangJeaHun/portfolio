@@ -36,6 +36,11 @@ $(document).ready(function () {
   });
 
   side_navi() ;
+  btun_resume();
+
+
+
+
 });
 
 
@@ -158,4 +163,19 @@ function flip(e) {
   });
 
   lastClickedCard = e.target;
+}
+
+
+function btun_resume(){
+  $("#profile_bottom>.btn_resume").click(function(){
+    console.log("클릭클릭")
+    $("#about_wrap>.design_resume,#about_wrap>#m_back").slideDown();
+  });
+  
+  $("#about_wrap>.design_resume>.close").click(function(){
+    console.log("클릭클릭")
+    $("#about_wrap>.design_resume,#about_wrap>#m_back").slideUp();
+
+  });
+
 }
