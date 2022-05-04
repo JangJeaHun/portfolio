@@ -314,29 +314,7 @@ header img{
 }
 
 
-@media all and ( max-width: 376px ){
 
-
-
-	/* header img{
-		width: 80px;
-	}
-	#gnb{
-		display: flex;
-	}
-	#gnb a{
-		display: block;
-		width: 181px;
-		height: 30px;
-		font-size: 16px;
-		font-family: "Noto Sans";
-	}
-	#gnb li:hover>a{
-		color: #333;
-		font-weight: bold;
-	} */
-	
-}
 
 @media all and ( max-width: 769px ){
 
@@ -361,9 +339,9 @@ header img{
 		background-color: rgba(0, 0, 0, 0.7);
 		width: 40vw;
 		height: 100vh;
-		right: 0;
+		right: 100px;
 		position: fixed;
-		z-index: 999;
+		z-index: 9999;
 		transition-duration: 0.4s;
 	}
 	.close{
@@ -391,3 +369,30 @@ header img{
 
 
 }
+
+@media all and ( max-width: 426px ){
+	html,body{
+		max-width: 425px;
+		overflow-x: hidden;
+	}
+	
+	
+		/* header img{
+			width: 80px;
+		}
+		#gnb{
+			display: flex;
+		}
+		#gnb a{
+			display: block;
+			width: 181px;
+			height: 30px;
+			font-size: 16px;
+			font-family: "Noto Sans";
+		}
+		#gnb li:hover>a{
+			color: #333;
+			font-weight: bold;
+		} */
+		
+	}

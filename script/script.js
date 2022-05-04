@@ -1,6 +1,7 @@
 $(document).ready(function () {
-  var width = $(window).width();
-  if (width > 426) {
+  var wid = $(window).width();
+  console.log(wid)
+  if (wid > 426) {
     $(".slick-items").slick({
       autoplay: true,
       dots: true,
@@ -27,7 +28,8 @@ $(document).ready(function () {
       fade: false,
     });
   }
-  $(".fa-bars").click(function () {
+  $("header>i").click(function () {
+    console.log("클릭중")
     $("#side").show();
   });
 
