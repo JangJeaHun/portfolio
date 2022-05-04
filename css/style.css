@@ -339,7 +339,7 @@ header img{
 		background-color: rgba(0, 0, 0, 0.7);
 		width: 40vw;
 		height: 100vh;
-		right: 100px;
+		right: 0;
 		position: fixed;
 		z-index: 9999;
 		transition-duration: 0.4s;
@@ -374,6 +374,9 @@ header img{
 	html,body{
 		max-width: 425px;
 		overflow-x: hidden;
+	}
+	#side{
+		right: 0;
 	}
 	
 	

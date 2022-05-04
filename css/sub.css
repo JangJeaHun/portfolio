@@ -264,10 +264,24 @@ section figure img{
 
 
 
-@media all and ( max-width: 425px ){  
+@media all and ( max-width: 425px ){
+	#about{
+		height: 100%;
+	} 
 	#about_wrap{
 		flex-direction: column;
 		align-items: center;
+	}
+	#about_wrap>div>.profile_text{
+		display: flex;
+		flex-direction: column;
+	}
+	#about_wrap>div>.profile_text th{
+		text-align: left;
+		padding-top: 20px;
+	}
+	.contact_bottom>span{
+		font-size: 12px;
 	}
 	
 

@@ -28,14 +28,7 @@ $(document).ready(function () {
       fade: false,
     });
   }
-  $("header>i").click(function () {
-    console.log("클릭중")
-    $("#side").show();
-  });
-
-  $(".close").click(function () {
-    $("#side").hide();
-  });
+  
 
   side_navi() ;
   btun_resume();
@@ -45,6 +38,15 @@ $(document).ready(function () {
 
 });
 
+$("header>i").click(function () {
+  console.log("클릭중");
+  $("#side").show();
+});
+
+$("#side>.close>i").click(function () {
+  console.log("클릭중");
+  $("#side").hide();
+});
 
 
 function side_navi() {
