@@ -8,7 +8,7 @@ $(document).ready(function () {
       speed: 400 /* 이미지가 슬라이딩시 걸리는 시간 */,
       infinite: true,
       /* 이미지가 다른 이미지로 넘어 갈때의 텀 */
-      autoplaySpeed: 1000000,
+      autoplaySpeed: 3000,
       arrows: false,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -21,7 +21,7 @@ $(document).ready(function () {
       speed: 400 /* 이미지가 슬라이딩시 걸리는 시간 */,
       infinite: true,
       /* 이미지가 다른 이미지로 넘어 갈때의 텀 */
-      autoplaySpeed: 1000000,
+      autoplaySpeed: 3000,
       arrows: false,
       slidesToShow: 1,
       slidesToScroll: 1,

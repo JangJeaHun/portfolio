@@ -18,6 +18,11 @@ a:visited,a:link{
 	padding: 0;
 }
 
+body img{
+	image-rendering: -webkit-optimize-contrast;
+	transform: translateZ(0);
+	backface-visibility: hidden;
+}
 
 #vidtop-content {
 top: 0;
@@ -181,24 +186,6 @@ h1 {
 .section2{
 	background-color: green;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -378,24 +365,37 @@ header img{
 	#side{
 		right: 0;
 	}
-	
-	
-		/* header img{
-			width: 80px;
-		}
-		#gnb{
-			display: flex;
-		}
-		#gnb a{
-			display: block;
-			width: 181px;
-			height: 30px;
-			font-size: 16px;
-			font-family: "Noto Sans";
-		}
-		#gnb li:hover>a{
-			color: #333;
-			font-weight: bold;
-		} */
-		
+	#side_navi{
+		top: 70%;
 	}
+	.fa-bars{
+		height: 50px;
+		width: 50px;
+	}
+	#about{
+		height: 100%;
+	} 
+	#about_wrap{
+		flex-direction: column;
+		align-items: center;
+	}
+	#about_wrap>.design_resume>.close{
+		top: -30%;
+		left: 90%;
+		color: black;
+	}
+	#about_wrap>div>.profile_text{
+		display: flex;
+		flex-direction: column;
+	}
+	#about_wrap>div>.profile_text th{
+		text-align: left;
+		padding-top: 20px;
+	}
+	
+	.contact_bottom>span{
+		font-size: 12px;
+	}
+
+		
+}
