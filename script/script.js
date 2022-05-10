@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+  
   var wid = $(window).width();
   console.log(wid)
   if (wid > 426) {
@@ -161,7 +163,7 @@ function flip(e) {
   header.appendChild(image);
 
   Flip.from(state, {
-    duration: 0.6,
+    duration: 0.4,
     ease: "sine.out",
     absolute: true,
   });
