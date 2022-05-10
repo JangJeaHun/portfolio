@@ -62,7 +62,8 @@ body {
 	height: 600vh;
 	width: 100vw;
 	font-family: "Noto Sans", sans-serif;
-	background-color: #ECB682;
+	/* background-color: #ECB682; */
+	background: url(../images/main_bg.png);
 	color: white;
 	overflow-x: hidden; 
 	-ms-overflow-style: none; 
@@ -72,8 +73,11 @@ body {
 ::-webkit-scrollbar {
 	display: none;
 }
-
+header{
+	background: pink;
+}
 h1 {
+	
 	font-family: "longline";
 	transition-duration: 0.4s;
 }
