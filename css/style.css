@@ -61,6 +61,8 @@ body {
 	margin: 0;
 	height: 600vh;
 	width: 100vw;
+	position: relative;
+	z-index: -2;
 	font-family: "Noto Sans", sans-serif;
 	/* background-color: #ECB682; */
 	background: url(../images/main_bg.png);
@@ -73,9 +75,7 @@ body {
 ::-webkit-scrollbar {
 	display: none;
 }
-header{
-	background: pink;
-}
+
 h1 {
 	
 	font-family: "longline";
@@ -257,7 +257,7 @@ figcaption{
   left: 10%;
   top: 10%;
   width: 2px;
-  height: 0%; }
+  height: 0%;}
 
 .line span::after {
   content: "";
@@ -275,10 +275,10 @@ header{
 	z-index: 998;
 	position: fixed;
 	height: 55px;
+	background-color: skyblue;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin: 10px 10px;
 }
 header img{
 	width: 80px;
@@ -287,12 +287,14 @@ header img{
 	display: flex;
 }
 #gnb a{
+	color: white;
 	display: block;
 	width: 15vw;
 	height: 30px;
 	font-size: 16px;
 	font-family: "Noto Sans";
 	font-weight: 900;
+	padding-top: 20px;
 }
 #gnb li:hover>a{
 	font-weight: 900;

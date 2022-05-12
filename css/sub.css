@@ -228,7 +228,9 @@ section img{
 	backface-visibility: hidden;
 
 }
-
+#contact{
+	background-color: #ECB682;
+}
 #contact>.contact_main{
 	display: flex;
 	justify-content: space-around;
